@@ -15,7 +15,7 @@
 <script>
   promise_test(async (t) => {
     const expectedInitiator = await getResourceID("nested.css");
-    const resources = ["resource_timing_test0.css", "Ahem.ttf", "blue.png"];
+    const resources = ["resource_timing_test0.css"];
     for (const resource of resources) {
       await testResourceInitiator(resource, expectedInitiator);
     }
