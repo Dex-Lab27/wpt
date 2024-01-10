@@ -28,6 +28,10 @@ t.step(function() {
   canvas.height = "0x96";
   _assertSame(canvas.width, 150, "canvas.width", "150");
   _assertSame(canvas.height, 150, "canvas.height", "150");
+  canvas.width = 200 - Math.pow(2, 32);
+  canvas.height = 200 - Math.pow(2, 32);
+  _assertSame(canvas.width, 200, "canvas.width", "200");
+  _assertSame(canvas.height, 200, "canvas.height", "200");
   canvas.width = 301.999;
   canvas.height = 301.001;
   _assertSame(canvas.width, 301, "canvas.width", "301");
